@@ -1,32 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
 
-namespace Sentencias
+namespace programa1
 {
-    internal class SentenciasUsing
+    internal class Program
     {
         public static void Main(string[] args)
         {
-            string s;
-
-            using (TextWriter w = File.CreateText("log.txt"))
-            {
-                w.WriteLine("linea uno");
-                w.WriteLine("linea dos");
-            }
-
-            using (TextReader r = File.OpenText("log.txt"))
-            {
-                while ((s = r.ReadLine()) != null)
-                {
-                    Console.WriteLine(s);
-                }
-            }
-            Console.ReadKey();
+            Console.WriteLine("Hazlo Facil, haz Click!");
         }
     }
 }
